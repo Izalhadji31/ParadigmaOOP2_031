@@ -17,3 +17,12 @@ public:
 
     }
 };
+
+
+int main()
+{
+    derivedCLass a;
+    a.perkenalan();
+
+    return 0;
+}
