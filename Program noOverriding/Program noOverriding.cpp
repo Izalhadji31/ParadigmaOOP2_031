@@ -1,6 +1,11 @@
 #include <iostream>
+using namespace std;
 
-int main()
-{
-    std::cout << "Hello World!\n";
-}
+class baseClass {
+public:
+    virtual void perkenalan() {
+
+        cout << "Hallo saya Function dari base class";
+
+    }
+};
