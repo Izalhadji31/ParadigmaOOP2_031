@@ -3,40 +3,43 @@ using namespace std;
 
 class seseorang {
 public:
-    virtual void pesan() = 0;
-    // virtual void pesan(){
-    //      cout <<"pesan dari seseorang"<<endl;
-    // }
+	virtual void pesan() = 0;
+	//virtual void pesan() {
+		//cout << "Pesan dari seseorang" << endl;
+	//}
+	//virtual void cetak() = 0;
+	virtual void cetak() {
+
+	}
 };
 
 class joko : public seseorang {
 public:
-    void pesan() {
-        cout << "Pesan dari Joko" << endl;
-
-    }
+	void pesan() {
+		cout << "Pesan dari Joko" << endl;
+	}
+	void cetak() {
+		cout << "Tulisan Joko" << endl;
+	}
 };
-
 
 class lia : public seseorang {
-public:
-    void pesan() {
-        cout << "Pesan dari Lia" << endl;
-    }
+	void pesan() {
+		cout << "Pesan dari Lia" << endl;
+	}
+
+
 };
 
-int main()
-{
-    seseorang* obyek;
-    joko a;
-    lia b;
+int main() {
+	seseorang* orang;
+	joko a;
+	lia b;
 
-    obyek = &a;
-    obyek->pesan();
-    obyek = &b;
-    obyek->pesan();
-    // a.seseorang::pesan();//Memanggil method yang berada di class orang tua
+	orang = &a;
+	orang->pesan();
+	orang = &b;
+	orang->pesan();
+	//a.seseorang::pesan();	//Memanggil method yang berada di class orang tua
 	//b.seseorang::pesan();
-
-    return 0;
 }

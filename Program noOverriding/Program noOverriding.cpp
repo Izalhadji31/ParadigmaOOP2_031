@@ -3,26 +3,21 @@ using namespace std;
 
 class baseClass {
 public:
-    virtual void perkenalan() final {
-
-        cout << "Hallo saya Function dari base class";
-
-    }
+	virtual void perkenalan() {
+		cout << "Hallo saya Function dari base class";
+	}
 };
 
-class derivedCLass : public baseClass {
+class derivedClass : public baseClass {
 public:
-    void perkenalan() {
-        cout << "Hallo saya Function dari derived class";
-
-    }
+	void perkenalan() {
+		cout << "Hallo saya Function dari derived Class";
+	}
 };
 
+int main() {
+	derivedClass a;
+	a.perkenalan();
 
-int main()
-{
-    derivedCLass a;
-    a.perkenalan();
-
-    return 0;
+	return 0;
 }
