@@ -35,7 +35,8 @@ int main()
     obyek->pesan();
     obyek = &b;
     obyek->pesan();
-    // a.seseorang::pesan();
+    // a.seseorang::pesan();//Memanggil method yang berada di class orang tua
+	//b.seseorang::pesan();
 
     return 0;
 }
